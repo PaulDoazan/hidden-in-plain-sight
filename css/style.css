@@ -1,0 +1,33 @@
+:root {
+    --blue1 : #011f4b;
+    --blue2 : #03396c;
+    --blue3 : #005b96;
+    --blue4 : #6497b1;
+    --blue5 : #b3cde0;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    background: linear-gradient(to right, var(--blue5), var(--blue4));
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.main-container {
+    text-align: center;
+    margin: 1em;
+}
+
+#demoCanvas {
+    background-color: white;
+    margin-top: 20px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
