@@ -14,6 +14,13 @@
   padding: 0;
 }
 
+h1 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
 body {
     font-family: 'Space Mono', monospace;
     background: linear-gradient(to right, var(--blue5), var(--blue4));
@@ -23,7 +30,11 @@ body {
 
 .main-container {
     text-align: center;
-    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 #demoCanvas {

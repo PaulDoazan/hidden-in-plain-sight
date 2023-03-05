@@ -2,7 +2,7 @@ const colors = ['#063c77', '#f19648', '#f5d259', '#d84f35']
 let stage, manifest, loader;
 let arrKeydown = [];
 let keysAllowed = ['a', 's', 'd', 'w', 'f', 't', 'ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', 'Shift', 'Enter']
-let tg1, tg2, targetsContainer, zombiesContainer;
+let tg1, tg2, targetsContainer, zombiesContainer, bg1, bg2;
 let targetSpeed = 4;
 let zombie1, zombie2;
 let infos = [
@@ -40,6 +40,8 @@ function init() {
         { src: "woman/Walk.png", id: "woman_walk" },
         { src: "woman/Idle.png", id: "woman_idle" },
         { src: "woman/die.png", id: "woman_die" },
+        { src: "background_1.jpg", id: "bg1" },
+        { src: "background_2.jpg", id: "bg2" },
     ];
 
     loader = new createjs.LoadQueue(false);
@@ -50,6 +52,15 @@ function init() {
 function handleComplete() {
     zombie1 = createZombie('man')
     zombie2 = createZombie('woman')
+
+    bg1 = createBackground(bg1, 'bg1');
+    bg2 = createBackground(bg2, 'bg2');
+}
+
+function createBackground(container, str) {
+    let bmp = new createjs.Bitmap(loader.getResult(str));
+    if (str === 'bg2') bmp.y = 324
+    container.addChild(bmp)
 }
 
 function createTarget(x, y, color) {
@@ -71,12 +82,15 @@ function createTarget(x, y, color) {
 
 function setGame() {
     tg1 = createTarget(150, 200, 'red')
-    tg2 = createTarget(300, 400, 'blue')
+    tg2 = createTarget(350, 300, 'blue')
 
     zombiesContainer = new createjs.Container()
     targetsContainer = new createjs.Container()
+    bg1 = new createjs.Container();
+    bg2 = new createjs.Container();
     targetsContainer.addChild(tg1, tg2)
-    stage.addChild(zombiesContainer, targetsContainer);
+
+    stage.addChild(bg1, zombiesContainer, bg2, targetsContainer);
 
     window.addEventListener('keydown', onKeydown)
     window.addEventListener('keyup', onKeyup)
