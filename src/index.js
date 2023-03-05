@@ -46,7 +46,7 @@ function init() {
 
     loader = new createjs.LoadQueue(false);
     loader.addEventListener("complete", handleComplete);
-    loader.loadManifest(manifest, true, "../assets/");
+    loader.loadManifest(manifest, true, "../src/");
 }
 
 function handleComplete() {
