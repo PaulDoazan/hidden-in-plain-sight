@@ -1,0 +1,46 @@
+[
+    {
+        "src": "man/Walk.png",
+        "id": "man_walk"
+    },
+    {
+        "src": "man/Idle.png",
+        "id": "man_idle"
+    },
+    {
+        "src": "man/die.png",
+        "id": "man_die"
+    },
+    {
+        "src": "woman/Walk.png",
+        "id": "woman_walk"
+    },
+    {
+        "src": "woman/Idle.png",
+        "id": "woman_idle"
+    },
+    {
+        "src": "woman/die.png",
+        "id": "woman_die"
+    },
+    {
+        "src": "wild/Walk.png",
+        "id": "wild_walk"
+    },
+    {
+        "src": "wild/Idle.png",
+        "id": "wild_idle"
+    },
+    {
+        "src": "wild/dead.png",
+        "id": "wild_die"
+    },
+    {
+        "src": "backgrounds/background_1.jpg",
+        "id": "bg1"
+    },
+    {
+        "src": "backgrounds/background_2.jpg",
+        "id": "bg2"
+    }
+]

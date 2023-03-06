@@ -1,0 +1,20 @@
+[
+    {
+        "type": "man",
+        "walk": 8,
+        "idle": 8,
+        "die": 5
+    },
+    {
+        "type": "woman",
+        "walk": 7,
+        "idle": 5,
+        "die": 5
+    },
+    {
+        "type": "wild",
+        "walk": 10,
+        "idle": 9,
+        "die": 5
+    }
+]
