@@ -1,5 +1,5 @@
 import target from "./target.js"
-import manifest from "../assets/manifest.json" assert { type: 'json' };
+import manifest from "https://pauldoazan.github.io/hidden-in-plain-sight/assets/manifest.json" assert { type: 'json' };
 import zombie from "./zombie.js"
 import { shuffleArray, getDistanceBetweenTwoPoints } from "./utils.js";
 

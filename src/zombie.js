@@ -1,4 +1,4 @@
-import spriteSheetInfos from "../assets/spriteSheetInfos.json" assert { type: 'json' };
+import spriteSheetInfos from "https://pauldoazan.github.io/hidden-in-plain-sight/assets/spriteSheetInfos.json" assert { type: 'json' };
 import { getRandomIntInclusive } from "./utils.js";
 
 let types = ["wild", "woman", "man"]
