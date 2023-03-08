@@ -115,7 +115,7 @@ function fire(tg) {
     targets.sort((a, b) => getDistanceBetweenTwoPoints(tg, a) - getDistanceBetweenTwoPoints(tg, b))
     if (!targets.length) return
     target = targets[0];
-    console.log(target);
+
     target.animate(2);
     target.removeEventListener('tick', target.tickHandler)
 }

@@ -46,6 +46,7 @@ export default function zombie(parentContainer, loader) {
 
     walk.visible = false;
     die.visible = false;
+    die.stop();
 
     container.addChild(walk, idle, die)
     container.animations = [walk, idle, die];
@@ -82,5 +83,6 @@ export default function zombie(parentContainer, loader) {
 function animate(index) {
     this.animations.forEach((animation, i) => {
         animation.visible = i === index
+        if (index === 2) animation.play();
     })
 }
