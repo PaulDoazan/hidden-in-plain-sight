@@ -46,7 +46,8 @@ export default function zombie(parentContainer, loader) {
 
     walk.visible = false;
     die.visible = false;
-    die.stop();
+    walk.stop()
+    die.stop()
 
     container.addChild(walk, idle, die)
     container.animations = [walk, idle, die];
@@ -66,8 +67,10 @@ export default function zombie(parentContainer, loader) {
             container.canMove = !container.canMove;
             countTick = getRandomIntInclusive(minTick, maxTick);
             if (container.canMove) {
-                e.currentTarget.animate(0)
-                if (!container.isPlayer) e.currentTarget.x += walkSpeed;
+                if (!container.isPlayer) {
+                    e.currentTarget.animate(0)
+                    e.currentTarget.x += walkSpeed;
+                }
             } else {
                 e.currentTarget.animate(1)
             }
