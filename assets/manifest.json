@@ -42,5 +42,13 @@
     {
         "src": "backgrounds/background_2.jpg",
         "id": "bg2"
+    },
+    {
+        "src": "shots/fireShot.png",
+        "id": "fireShot"
+    },
+    {
+        "src": "shots/bloodShot.png",
+        "id": "bloodShot"
     }
 ]

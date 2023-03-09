@@ -1,6 +1,7 @@
 import target from "./target.js"
 import manifest from "https://pauldoazan.github.io/hidden-in-plain-sight/assets/manifest.json" assert { type: 'json' };
 import zombie from "./zombie.js"
+import fireShot from "./fireShot.js";
 import { shuffleArray, getDistanceBetweenTwoPoints } from "./utils.js";
 
 let stage, loader;
@@ -113,9 +114,16 @@ function fire(tg) {
     let target;
     let targets = bots.filter((bot) => getDistanceBetweenTwoPoints(tg, bot) < tg.radius)
     targets.sort((a, b) => getDistanceBetweenTwoPoints(tg, a) - getDistanceBetweenTwoPoints(tg, b))
+
+    let shot = fireShot(stage, loader)
+    shot.x = tg.x
+    shot.y = tg.y
+
     if (!targets.length) return
     target = targets[0];
 
     target.animate(2);
     target.removeEventListener('tick', target.tickHandler)
+
+
 }
