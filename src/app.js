@@ -2,6 +2,7 @@ import target from "./target.js"
 import manifest from "https://pauldoazan.github.io/hidden-in-plain-sight/assets/manifest.json" assert { type: 'json' };
 import zombie from "./zombie.js"
 import fireShot from "./fireShot.js";
+import bloodShot from "./bloodShot.js";
 import { shuffleArray, getDistanceBetweenTwoPoints } from "./utils.js";
 
 let stage, loader;
@@ -121,6 +122,10 @@ function fire(tg) {
 
     if (!targets.length) return
     target = targets[0];
+
+    let blood = bloodShot(stage, loader)
+    blood.x = tg.x
+    blood.y = tg.y
 
     target.animate(2);
     target.removeEventListener('tick', target.tickHandler)

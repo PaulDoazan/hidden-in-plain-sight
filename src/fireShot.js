@@ -6,15 +6,16 @@ export default function fireShot(parentContainer, loader) {
     let spriteSheet = new createjs.SpriteSheet({
         framerate: 60,
         "images": [loader.getResult("fireShot")],
-        "frames": { "regX": 48, "height": 96, "count": 20, "regY": 48, "width": 96 },
+        "frames": { "regX": 32, "height": 64, "count": 16, "regY": 32, "width": 64 },
         "animations": {
-            "fire": [0, 19, "end", 0.1],
-            "end": 19
+            "fire": [0, 16, "end"],
+            "end": 16
         }
     });
 
     let fire = new createjs.Sprite(spriteSheet, "fire");
 
+    fire.scaleX = fire.scaleY = 0.5;
     container.addChild(fire)
     parentContainer.addChild(container)
 

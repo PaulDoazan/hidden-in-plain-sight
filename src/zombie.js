@@ -86,6 +86,12 @@ export default function zombie(parentContainer, loader) {
 function animate(index) {
     this.animations.forEach((animation, i) => {
         animation.visible = i === index
-        animation.play();
+        if (i === index) {
+            animation.visible = true
+            animation.play();
+        } else {
+            animation.visible = false
+        }
+
     })
 }
