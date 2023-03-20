@@ -24,15 +24,15 @@
         "id": "woman_die"
     },
     {
-        "src": "wild/walk.png",
+        "src": "wild/Walk.png",
         "id": "wild_walk"
     },
     {
-        "src": "wild/idle.png",
+        "src": "wild/Idle.png",
         "id": "wild_idle"
     },
     {
-        "src": "wild/dead.png",
+        "src": "wild/Dead.png",
         "id": "wild_die"
     },
     {
