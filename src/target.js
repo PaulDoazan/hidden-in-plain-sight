@@ -1,12 +1,12 @@
-const radius = 40;
-const bigDashLength = 40;
-const smallDashLength = 5;
+const radius = 20;
+const bigDashLength = radius;
+const smallDashLength = 3;
 
 export default function target(x, y, color) {
     let container = new createjs.Container()
 
     let outterCircle = drawCircle(color, radius)
-    let innerCircle = drawCircle(color, radius - 10)
+    let innerCircle = drawCircle(color, radius * 0.75)
     let dashes = drawDashes(color);
 
     innerCircle.alpha = 0.5

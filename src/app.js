@@ -52,7 +52,7 @@ function createBackground(container, str) {
 }
 
 function setGame() {
-    tg1 = target(500, 200, 'yellow')
+    tg1 = target(500, 200, 'pink')
     tg2 = target(650, 240, 'blue')
 
     zombiesContainer = new createjs.Container()

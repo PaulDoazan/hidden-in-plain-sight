@@ -15,14 +15,16 @@
 }
 
 h1 {
+    font-size: 40px;
     position: absolute;
     width: 100%;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 body {
     font-family: 'Space Mono', monospace;
+    color: yellow;
     background: linear-gradient(to right, var(--blue5), var(--blue4));
     min-height: 100vh;
     overflow: hidden;
@@ -39,6 +41,6 @@ body {
 
 #demoCanvas {
     background-color: white;
-    margin-top: 20px;
+    width: 100%;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
