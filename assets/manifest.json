@@ -1,10 +1,10 @@
 [
     {
-        "src": "man/Walk.png",
+        "src": "man/walk.png",
         "id": "man_walk"
     },
     {
-        "src": "man/Idle.png",
+        "src": "man/idle.png",
         "id": "man_idle"
     },
     {
@@ -12,11 +12,11 @@
         "id": "man_die"
     },
     {
-        "src": "woman/Walk.png",
+        "src": "woman/walk.png",
         "id": "woman_walk"
     },
     {
-        "src": "woman/Idle.png",
+        "src": "woman/idle.png",
         "id": "woman_idle"
     },
     {
@@ -24,11 +24,11 @@
         "id": "woman_die"
     },
     {
-        "src": "wild/Walk.png",
+        "src": "wild/walk.png",
         "id": "wild_walk"
     },
     {
-        "src": "wild/Idle.png",
+        "src": "wild/idle.png",
         "id": "wild_idle"
     },
     {
